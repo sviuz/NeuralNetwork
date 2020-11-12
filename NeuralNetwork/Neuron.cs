@@ -22,7 +22,6 @@ namespace NeuralNetwork
             }
         }
 
-
         public double FeedForward(List<double> inputs)
         {
             var sum = 0.0;
