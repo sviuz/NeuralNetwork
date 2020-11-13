@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NeuralNetwork
+namespace NeuralNetworks
 {
     public class Neuron
     {
@@ -17,7 +17,7 @@ namespace NeuralNetwork
             Weights = new List<double>();
 
             for (int i = 0; i < inputCount; i++)
-            {
+            {  
                 Weights.Add(1);
             }
         }
@@ -38,6 +38,15 @@ namespace NeuralNetwork
         private double Sigm(double x)
         {
             return 1.0 / (1.0 + Math.Pow(Math.E, -x));
+        }
+
+        public void SetWeights(params double[] weights)
+        {
+            //  TODO: удалить после добавления возможности обучения сети.
+            for (int i = 0; i < weights.Length; i++)
+            {
+                Weights[i] = weights[i];
+            }
         }
 
         public override string ToString()
