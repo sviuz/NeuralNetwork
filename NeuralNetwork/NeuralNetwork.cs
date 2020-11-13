@@ -59,7 +59,7 @@ namespace NeuralNetworks
             Layers.Add(outputLayer);
         }
 
-        public Neuron FFNN(List<double> inputSignals)//Feed Forward Neural Network
+        public Neuron FeedForwardNeuralNetwork(List<double> inputSignals)
         {
             SendSignalsToInputNeurons(inputSignals);
             FeedForwardAllLayersAfterInput();

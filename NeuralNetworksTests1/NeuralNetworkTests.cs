@@ -18,7 +18,7 @@ namespace NeuralNetworks.Tests
             neuralNetwork.Layers[1].Neurons[1].SetWeights(0.1, -0.3, 0.7, -0.3);
             neuralNetwork.Layers[2].Neurons[0].SetWeights(1.2,0.8);
 
-            var res = neuralNetwork.FFNN(new List<double> { 1, 0, 0, 0 });
+            var res = neuralNetwork.FeedForwardNeuralNetwork(new List<double> { 1, 0, 0, 0 });
 
         }
     }
